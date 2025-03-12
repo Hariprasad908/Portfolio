@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Portfolio - Hari Prasad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hari Prasad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-    <div>
-        <section>
+    <div class="container mt-4">
+        <!-- About Section -->
+        <section id="about" class="py-4">
             <h2>About Me</h2>
-            <p>Hi, I'm Hari Prasad, a Computer Science Engineering student at KMIT. Passionate about technology, programming, and problem-solving, I am continuously exploring new advancements in the field. I have a keen interest in software development and enjoy working on innovative projects.</p>
+            <p>Hi, I'm Hari Prasad, a Computer Science Engineering student at KMIT. Passionate about technology, programming, and problem-solving, I enjoy working on innovative projects.</p>
         </section>
-        
-        <section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-4">
             <h2>Skills</h2>
             <ul>
                 <li>Programming: C, C++, Python</li>
@@ -26,32 +42,36 @@
                 <li>Problem-Solving & Data Structures</li>
             </ul>
         </section>
-        
-        <section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-4">
             <h2>Projects & Work Experience</h2>
             <ul>
-                <li>E-Portal: A web-based platform for managing court case records and legal documentation.</li>
+                <li><strong>E-Portal:</strong> A web-based platform for managing court case records and legal documentation.</li>
             </ul>
         </section>
-        
-        <section>
-            <h2>Achievements</h2>
-            <p>Participated in HackForst Hackathon</p>
-            <p>Certificate on project completion for E-Portal</p>
-        </section>
-        
-        <section>
-            <h2>Education</h2>
-            <p>B.Tech in CSE at KMIT</p>
-            <p>Intermediate at Sri Chaitanya</p>
-            <p>10th at Sri Chaitanya</p>
-        </section>
-        
-        <section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-4">
             <h2>Contact Me</h2>
-            <p>Email:vorugantihariprasad908@gmail.com </p>
-            <p>Phone: 9999999999</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </section>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
